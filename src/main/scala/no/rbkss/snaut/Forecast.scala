@@ -9,11 +9,21 @@ import java.net.URL
 import grizzled.slf4j.Logging
 import org.joda.time.DateTime
 
+case class Symbol(symbol: Integer, symbolExtended: Integer, variant: String, name: String)
+case class Precipitation(value: Float, minimum: Float, maximum: Float)
+case class WindDirection(degrees: Float, code: String, name: String)
+case class WindSpeed(value: Float, unit: String, name: String)
+case class Temperature(value: Float, unit: String)
+case class Pressure(value: Float, unit: String)
+
 case class ForecastSnapshot(from: DateTime,
                             to: DateTime,
-                            temperature: Float,
-                            percipitation: Float,
-                            symbol: Integer)
+                            symbol: Symbol,
+                            percipitation: Precipitation,
+                            windDirection: WindDirection,
+                            windSpeed: WindSpeed,
+                            temperature: Temperature,
+                            pressure: Pressure)
 
 class Forecast extends Logging {
     var forecast: Option[Elem] = None
@@ -34,6 +44,8 @@ class Forecast extends Logging {
     }
 
     private def getTabularTime(date: DateTime): Option[Node] = {
+        // NB: there is a two-hour gap in the forecast data that will be missed for now
+        // (it's during nighttime, so no conflict with football games)
         for (time <- (forecast.get \\ "weatherdata" \ "forecast" \ "tabular" \ "time")) {
             var from = DateTime.parse((time \ "@from") text)
             var to = DateTime.parse((time \ "@to") text)
@@ -51,27 +63,41 @@ class Forecast extends Logging {
     }
 
     def getSnapshot(date: DateTime): Option[ForecastSnapshot] = {
+
+        implicit class PipedObject[A](value: A) {
+           def |>[B](f: A => B): B = f(value)
+        }
+
         return getTabularTime(date) match {
             case Some(time) => {
                 var from = DateTime.parse((time \ "@from") text)
                 var to = DateTime.parse((time \ "@to") text)
-                var temperature = ((time \ "temperature" \ "@value") text).toFloat
-                var precipitation = ((time \ "precipitation" \ "@value") text).toFloat
-                var minprecipitation = ((time \ "precipitation" \ "@minvalue") text).toFloat
-                var maxprecipitation = ((time \ "precipitation" \ "@maxvalue") text).toFloat
-                var symbol = ((time \ "symbol" \ "@number") text).toInt
-                Some(new ForecastSnapshot(from, to, temperature, precipitation, symbol))
+                var symbol = (time \ "symbol") |> (tag =>
+                    Symbol(((tag \ "@number") text).toInt,
+                           ((tag \ "@numberEx") text).toInt,
+                           (tag \ "@var") text,
+                           (tag \ "@name") text))
+                var precipitation = (time \ "precipitation") |> (tag =>
+                    Precipitation(((tag \ "@value") text).toFloat,
+                                  ((tag \ "@minvalue") text).toFloat,
+                                  ((tag \ "@maxvalue") text).toFloat))
+                var windDirection = (time \ "windDirection") |> (tag =>
+                    WindDirection(((tag \ "@deg") text).toFloat,
+                                  (tag \ "@code") text,
+                                  (tag \ "@name") text))
+                var windSpeed = (time \ "windSpeed") |> (tag =>
+                    WindSpeed(((tag \ "@mps") text).toFloat,
+                              "mps",
+                              (tag \ "@name") text))
+                var temperature = (time \ "temperature") |> (tag =>
+                    Temperature(((tag \ "@value") text).toFloat,
+                                (tag \ "@unit") text))
+                var pressure = (time \ "pressure") |> (tag =>
+                    Pressure(((tag \ "@value") text).toFloat,
+                             (tag \ "@unit") text))
+                Some(new ForecastSnapshot(from, to, symbol, precipitation, windDirection, windSpeed, temperature, pressure))
             }
             case _ => None
         }
     }
-
-//    def getSnapshot(when: Date): ForecastSnapshot = {
-//        null
-//    }
 }
-
-object Main extends App {
-    val f = new Forecast
-}
-
