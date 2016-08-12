@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<weatherdata>
+  <location>
+    <name>Lerkendal</name>
+    <type>Sporting ground</type>
+    <country>Norway</country>
+    <timezone id="Europe/Oslo" utcoffsetMinutes="120" />
+    <location altitude="30" latitude="63.4122459689854" longitude="10.4052162135514" geobase="ssr" geobaseid="211228" />
+  </location>
+  <credit>
+    <!--In order to use the free weather data from yr no, you HAVE to display 
+the following text clearly visible on your web page. The text should be a 
+link to the specified URL.-->
+    <!--Please read more about our conditions and guidelines at http://om.yr.no/verdata/  English explanation at http://om.yr.no/verdata/free-weather-data/-->
+    <link text="Weather forecast from yr.no, delivered by the Norwegian Meteorological Institute and the NRK" url="http://www.yr.no/place/Norway/Sør-Trøndelag/Trondheim/Lerkendal~211228/" />
+  </credit>
+  <links>
+    <link id="xmlSource" url="http://www.yr.no/place/Norway/Sør-Trøndelag/Trondheim/Lerkendal~211228/forecast.xml" />
+    <link id="xmlSourceHourByHour" url="http://www.yr.no/place/Norway/Sør-Trøndelag/Trondheim/Lerkendal~211228/forecast_hour_by_hour.xml" />
+    <link id="overview" url="http://www.yr.no/place/Norway/Sør-Trøndelag/Trondheim/Lerkendal~211228/" />
+    <link id="hourByHour" url="http://www.yr.no/place/Norway/Sør-Trøndelag/Trondheim/Lerkendal~211228/hour_by_hour" />
+    <link id="longTermForecast" url="http://www.yr.no/place/Norway/Sør-Trøndelag/Trondheim/Lerkendal~211228/long" />
+    <link id="radar" url="http://www.yr.no/place/Norway/Sør-Trøndelag/Trondheim/Lerkendal~211228/radar.html" />
+  </links>
+  <meta>
+    <lastupdate>2016-08-09T10:33:00</lastupdate>
+    <nextupdate>2016-08-09T12:00:00</nextupdate>
+  </meta>
+  <sun rise="2016-08-09T04:57:18" set="2016-08-09T21:48:08" />
+  <forecast>
+    <text>
+      <location name="Lerkendal">
+        <time from="2016-08-09" to="2016-08-09">
+          <title>Tuesday</title>
+          <body>&lt;strong&gt;Trøndelag:&lt;/strong&gt; Nordvestlig bris, liten kuling på kysten, fra om kvelden frisk bris. Regnbyger.</body>
+        </time>
+        <time from="2016-08-10" to="2016-08-10">
+          <title>Wednesday</title>
+          <body>&lt;strong&gt;Sør-Norge og Nord-Norge:&lt;/strong&gt; For det meste vind mellom vest og nord. I Sør-Norge og Finnmark opptil stiv kuling på kysten. Regn og regnbyger i det meste av landet. Størst sjanse for litt sol blir det utpå dagen på Østlandet, i Trøndelag og på Helgeland. En kjølig dag i hele landet.</body>
+        </time>
+        <time from="2016-08-11" to="2016-08-11">
+          <title>Thursday</title>
+          <body>&lt;strong&gt;Trøndelag:&lt;/strong&gt; Vest og nordvest bris og enkelte regnbyer, snøbyer i høgfjellet. Mindre nedbør utover dagen. Gløtt av sol, men låge temperaturar for årstida.</body>
+        </time>
+      </location>
+    </text>
+    <tabular>
+      <time from="2016-08-09T12:00:00" to="2016-08-09T13:00:00">
+        <!-- Valid from 2016-08-09T12:00:00 to 2016-08-09T13:00:00 -->
+        <symbol number="10" numberEx="10" name="Heavy rain" var="10" />
+        <precipitation value="1.5" minvalue="0.5" maxvalue="4.2" />
+        <!-- Valid at 2016-08-09T12:00:00 -->
+        <windDirection deg="197.8" code="SSW" name="South-southwest" />
+        <windSpeed mps="2.5" name="Light breeze" />
+        <temperature unit="celsius" value="16" />
+        <pressure unit="hPa" value="995.7" />
+      </time>
+      <time from="2016-08-09T13:00:00" to="2016-08-09T14:00:00">
+        <!-- Valid from 2016-08-09T13:00:00 to 2016-08-09T14:00:00 -->
+        <symbol number="10" numberEx="10" name="Heavy rain" var="10" />
+        <precipitation value="2.3" minvalue="0.4" maxvalue="5.5" />
+        <!-- Valid at 2016-08-09T13:00:00 -->
+        <windDirection deg="317.8" code="NW" name="Northwest" />
+        <windSpeed mps="3.0" name="Light breeze" />
+        <temperature unit="celsius" value="14" />
+        <pressure unit="hPa" value="996.4" />
+      </time>
+      <time from="2016-08-09T14:00:00" to="2016-08-09T15:00:00">
+        <!-- Valid from 2016-08-09T14:00:00 to 2016-08-09T15:00:00 -->
+        <symbol number="10" numberEx="10" name="Heavy rain" var="10" />
+        <precipitation value="1.6" minvalue="0.9" maxvalue="3.1" />
+        <!-- Valid at 2016-08-09T14:00:00 -->
+        <windDirection deg="235.8" code="SW" name="Southwest" />
+        <windSpeed mps="3.1" name="Light breeze" />
+        <temperature unit="celsius" value="13" />
+        <pressure unit="hPa" value="997.2" />
+      </time>
+      <time from="2016-08-09T15:00:00" to="2016-08-09T16:00:00">
+        <!-- Valid from 2016-08-09T15:00:00 to 2016-08-09T16:00:00 -->
+        <symbol number="9" numberEx="9" name="Rain" var="09" />
+        <precipitation value="0.5" minvalue="0.3" maxvalue="1.0" />
+        <!-- Valid at 2016-08-09T15:00:00 -->
+        <windDirection deg="242.3" code="WSW" name="West-southwest" />
+        <windSpeed mps="2.6" name="Light breeze" />
+        <temperature unit="celsius" value="13" />
+        <pressure unit="hPa" value="997.8" />
+      </time>
+      <time from="2016-08-09T16:00:00" to="2016-08-09T17:00:00">
+        <!-- Valid from 2016-08-09T16:00:00 to 2016-08-09T17:00:00 -->
+        <symbol number="9" numberEx="9" name="Rain" var="09" />
+        <precipitation value="0.7" minvalue="0.4" maxvalue="1.2" />
+        <!-- Valid at 2016-08-09T16:00:00 -->
+        <windDirection deg="235.3" code="SW" name="Southwest" />
+        <windSpeed mps="2.4" name="Light breeze" />
+        <temperature unit="celsius" value="13" />
+        <pressure unit="hPa" value="998.4" />
+      </time>
+      <time from="2016-08-09T17:00:00" to="2016-08-09T18:00:00">
+        <!-- Valid from 2016-08-09T17:00:00 to 2016-08-09T18:00:00 -->
+        <symbol number="10" numberEx="10" name="Heavy rain" var="10" />
+        <precipitation value="1.3" minvalue="0.7" maxvalue="2.4" />
+        <!-- Valid at 2016-08-09T17:00:00 -->
+        <windDirection deg="261.0" code="W" name="West" />
+        <windSpeed mps="2.3" name="Light breeze" />
+        <temperature unit="celsius" value="13" />
+        <pressure unit="hPa" value="998.8" />
+      </time>
+      <time from="2016-08-09T18:00:00" to="2016-08-09T19:00:00">
+        <!-- Valid from 2016-08-09T18:00:00 to 2016-08-09T19:00:00 -->
+        <symbol number="10" numberEx="10" name="Heavy rain" var="10" />
+        <precipitation value="1.9" minvalue="1.2" maxvalue="3.3" />
+        <!-- Valid at 2016-08-09T18:00:00 -->
+        <windDirection deg="321.8" code="NW" name="Northwest" />
+        <windSpeed mps="5.4" name="Gentle breeze" />
+        <temperature unit="celsius" value="12" />
+        <pressure unit="hPa" value="999.9" />
+      </time>
+      <time from="2016-08-09T19:00:00" to="2016-08-09T20:00:00">
+        <!-- Valid from 2016-08-09T19:00:00 to 2016-08-09T20:00:00 -->
+        <symbol number="10" numberEx="10" name="Heavy rain" var="10" />
+        <precipitation value="1.4" minvalue="0.6" maxvalue="2.7" />
+        <!-- Valid at 2016-08-09T19:00:00 -->
+        <windDirection deg="344.6" code="NNW" name="North-northwest" />
+        <windSpeed mps="7.6" name="Moderate breeze" />
+        <temperature unit="celsius" value="11" />
+        <pressure unit="hPa" value="1002.3" />
+      </time>
+      <time from="2016-08-09T20:00:00" to="2016-08-09T21:00:00">
+        <!-- Valid from 2016-08-09T20:00:00 to 2016-08-09T21:00:00 -->
+        <symbol number="10" numberEx="10" name="Heavy rain" var="10" />
+        <precipitation value="1.1" minvalue="0.5" maxvalue="1.5" />
+        <!-- Valid at 2016-08-09T20:00:00 -->
+        <windDirection deg="332.9" code="NNW" name="North-northwest" />
+        <windSpeed mps="5.6" name="Moderate breeze" />
+        <temperature unit="celsius" value="10" />
+        <pressure unit="hPa" value="1004.6" />
+      </time>
+      <time from="2016-08-09T21:00:00" to="2016-08-09T22:00:00">
+        <!-- Valid from 2016-08-09T21:00:00 to 2016-08-09T22:00:00 -->
+        <symbol number="9" numberEx="9" name="Rain" var="09" />
+        <precipitation value="0.6" minvalue="0.2" maxvalue="1.0" />
+        <!-- Valid at 2016-08-09T21:00:00 -->
+        <windDirection deg="308.7" code="NW" name="Northwest" />
+        <windSpeed mps="4.5" name="Gentle breeze" />
+        <temperature unit="celsius" value="10" />
+        <pressure unit="hPa" value="1006.0" />
+      </time>
+      <time from="2016-08-09T22:00:00" to="2016-08-09T23:00:00">
+        <!-- Valid from 2016-08-09T22:00:00 to 2016-08-09T23:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" minvalue="0" maxvalue="0.4" />
+        <!-- Valid at 2016-08-09T22:00:00 -->
+        <windDirection deg="302.7" code="WNW" name="West-northwest" />
+        <windSpeed mps="5.0" name="Gentle breeze" />
+        <temperature unit="celsius" value="10" />
+        <pressure unit="hPa" value="1006.5" />
+      </time>
+      <time from="2016-08-09T23:00:00" to="2016-08-10T00:00:00">
+        <!-- Valid from 2016-08-09T23:00:00 to 2016-08-10T00:00:00 -->
+        <symbol number="9" numberEx="46" name="Light rain" var="46" />
+        <precipitation value="0.1" minvalue="0" maxvalue="0.7" />
+        <!-- Valid at 2016-08-09T23:00:00 -->
+        <windDirection deg="301.0" code="WNW" name="West-northwest" />
+        <windSpeed mps="3.7" name="Gentle breeze" />
+        <temperature unit="celsius" value="9" />
+        <pressure unit="hPa" value="1006.9" />
+      </time>
+      <time from="2016-08-10T00:00:00" to="2016-08-10T01:00:00">
+        <!-- Valid from 2016-08-10T00:00:00 to 2016-08-10T01:00:00 -->
+        <symbol number="9" numberEx="9" name="Rain" var="09" />
+        <precipitation value="0.7" minvalue="0.4" maxvalue="1.3" />
+        <!-- Valid at 2016-08-10T00:00:00 -->
+        <windDirection deg="299.9" code="WNW" name="West-northwest" />
+        <windSpeed mps="5.0" name="Gentle breeze" />
+        <temperature unit="celsius" value="9" />
+        <pressure unit="hPa" value="1007.6" />
+      </time>
+      <time from="2016-08-10T01:00:00" to="2016-08-10T02:00:00">
+        <!-- Valid from 2016-08-10T01:00:00 to 2016-08-10T02:00:00 -->
+        <symbol number="9" numberEx="9" name="Rain" var="09" />
+        <precipitation value="0.5" minvalue="0" maxvalue="1.2" />
+        <!-- Valid at 2016-08-10T01:00:00 -->
+        <windDirection deg="329.3" code="NNW" name="North-northwest" />
+        <windSpeed mps="3.7" name="Gentle breeze" />
+        <temperature unit="celsius" value="9" />
+        <pressure unit="hPa" value="1008.3" />
+      </time>
+      <time from="2016-08-10T02:00:00" to="2016-08-10T03:00:00">
+        <!-- Valid from 2016-08-10T02:00:00 to 2016-08-10T03:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" minvalue="0" maxvalue="0.1" />
+        <!-- Valid at 2016-08-10T02:00:00 -->
+        <windDirection deg="333.9" code="NNW" name="North-northwest" />
+        <windSpeed mps="3.2" name="Light breeze" />
+        <temperature unit="celsius" value="9" />
+        <pressure unit="hPa" value="1008.9" />
+      </time>
+      <time from="2016-08-10T03:00:00" to="2016-08-10T04:00:00">
+        <!-- Valid from 2016-08-10T03:00:00 to 2016-08-10T04:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" />
+        <!-- Valid at 2016-08-10T03:00:00 -->
+        <windDirection deg="314.6" code="NW" name="Northwest" />
+        <windSpeed mps="2.4" name="Light breeze" />
+        <temperature unit="celsius" value="9" />
+        <pressure unit="hPa" value="1009.2" />
+      </time>
+      <time from="2016-08-10T04:00:00" to="2016-08-10T05:00:00">
+        <!-- Valid from 2016-08-10T04:00:00 to 2016-08-10T05:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" minvalue="0" maxvalue="0.1" />
+        <!-- Valid at 2016-08-10T04:00:00 -->
+        <windDirection deg="307.1" code="NW" name="Northwest" />
+        <windSpeed mps="2.1" name="Light breeze" />
+        <temperature unit="celsius" value="9" />
+        <pressure unit="hPa" value="1009.5" />
+      </time>
+      <time from="2016-08-10T05:00:00" to="2016-08-10T06:00:00">
+        <!-- Valid from 2016-08-10T05:00:00 to 2016-08-10T06:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" minvalue="0" maxvalue="0.3" />
+        <!-- Valid at 2016-08-10T05:00:00 -->
+        <windDirection deg="299.5" code="WNW" name="West-northwest" />
+        <windSpeed mps="2.1" name="Light breeze" />
+        <temperature unit="celsius" value="9" />
+        <pressure unit="hPa" value="1009.7" />
+      </time>
+      <time from="2016-08-10T06:00:00" to="2016-08-10T07:00:00">
+        <!-- Valid from 2016-08-10T06:00:00 to 2016-08-10T07:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" minvalue="0" maxvalue="0.2" />
+        <!-- Valid at 2016-08-10T06:00:00 -->
+        <windDirection deg="300.7" code="WNW" name="West-northwest" />
+        <windSpeed mps="1.5" name="Light air" />
+        <temperature unit="celsius" value="9" />
+        <pressure unit="hPa" value="1009.7" />
+      </time>
+      <time from="2016-08-10T07:00:00" to="2016-08-10T08:00:00">
+        <!-- Valid from 2016-08-10T07:00:00 to 2016-08-10T08:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" />
+        <!-- Valid at 2016-08-10T07:00:00 -->
+        <windDirection deg="236.6" code="WSW" name="West-southwest" />
+        <windSpeed mps="2.0" name="Light breeze" />
+        <temperature unit="celsius" value="9" />
+        <pressure unit="hPa" value="1009.9" />
+      </time>
+      <time from="2016-08-10T08:00:00" to="2016-08-10T09:00:00">
+        <!-- Valid from 2016-08-10T08:00:00 to 2016-08-10T09:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" minvalue="0" maxvalue="0.1" />
+        <!-- Valid at 2016-08-10T08:00:00 -->
+        <windDirection deg="217.2" code="SW" name="Southwest" />
+        <windSpeed mps="1.5" name="Light air" />
+        <temperature unit="celsius" value="9" />
+        <pressure unit="hPa" value="1010.0" />
+      </time>
+      <time from="2016-08-10T09:00:00" to="2016-08-10T10:00:00">
+        <!-- Valid from 2016-08-10T09:00:00 to 2016-08-10T10:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" minvalue="0" maxvalue="0.2" />
+        <!-- Valid at 2016-08-10T09:00:00 -->
+        <windDirection deg="274.7" code="W" name="West" />
+        <windSpeed mps="2.8" name="Light breeze" />
+        <temperature unit="celsius" value="10" />
+        <pressure unit="hPa" value="1010.0" />
+      </time>
+      <time from="2016-08-10T10:00:00" to="2016-08-10T11:00:00">
+        <!-- Valid from 2016-08-10T10:00:00 to 2016-08-10T11:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" minvalue="0" maxvalue="0.3" />
+        <!-- Valid at 2016-08-10T10:00:00 -->
+        <windDirection deg="282.9" code="WNW" name="West-northwest" />
+        <windSpeed mps="2.8" name="Light breeze" />
+        <temperature unit="celsius" value="11" />
+        <pressure unit="hPa" value="1010.1" />
+      </time>
+      <time from="2016-08-10T11:00:00" to="2016-08-10T12:00:00">
+        <!-- Valid from 2016-08-10T11:00:00 to 2016-08-10T12:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" minvalue="0" maxvalue="0.2" />
+        <!-- Valid at 2016-08-10T11:00:00 -->
+        <windDirection deg="263.1" code="W" name="West" />
+        <windSpeed mps="2.7" name="Light breeze" />
+        <temperature unit="celsius" value="11" />
+        <pressure unit="hPa" value="1010.0" />
+      </time>
+      <time from="2016-08-10T12:00:00" to="2016-08-10T13:00:00">
+        <!-- Valid from 2016-08-10T12:00:00 to 2016-08-10T13:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" minvalue="0" maxvalue="0.3" />
+        <!-- Valid at 2016-08-10T12:00:00 -->
+        <windDirection deg="314.1" code="NW" name="Northwest" />
+        <windSpeed mps="1.8" name="Light breeze" />
+        <temperature unit="celsius" value="11" />
+        <pressure unit="hPa" value="1010.0" />
+      </time>
+      <time from="2016-08-10T13:00:00" to="2016-08-10T14:00:00">
+        <!-- Valid from 2016-08-10T13:00:00 to 2016-08-10T14:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" minvalue="0" maxvalue="0.7" />
+        <!-- Valid at 2016-08-10T13:00:00 -->
+        <windDirection deg="296.4" code="WNW" name="West-northwest" />
+        <windSpeed mps="2.7" name="Light breeze" />
+        <temperature unit="celsius" value="12" />
+        <pressure unit="hPa" value="1009.7" />
+      </time>
+      <time from="2016-08-10T14:00:00" to="2016-08-10T15:00:00">
+        <!-- Valid from 2016-08-10T14:00:00 to 2016-08-10T15:00:00 -->
+        <symbol number="10" numberEx="10" name="Heavy rain" var="10" />
+        <precipitation value="1.0" minvalue="0.2" maxvalue="2.1" />
+        <!-- Valid at 2016-08-10T14:00:00 -->
+        <windDirection deg="318.7" code="NW" name="Northwest" />
+        <windSpeed mps="1.7" name="Light breeze" />
+        <temperature unit="celsius" value="12" />
+        <pressure unit="hPa" value="1009.4" />
+      </time>
+      <time from="2016-08-10T15:00:00" to="2016-08-10T16:00:00">
+        <!-- Valid from 2016-08-10T15:00:00 to 2016-08-10T16:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03d" />
+        <precipitation value="0" minvalue="0" maxvalue="0.4" />
+        <!-- Valid at 2016-08-10T15:00:00 -->
+        <windDirection deg="175.7" code="S" name="South" />
+        <windSpeed mps="2.5" name="Light breeze" />
+        <temperature unit="celsius" value="9" />
+        <pressure unit="hPa" value="1009.6" />
+      </time>
+      <time from="2016-08-10T16:00:00" to="2016-08-10T17:00:00">
+        <!-- Valid from 2016-08-10T16:00:00 to 2016-08-10T17:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" minvalue="0" maxvalue="0.4" />
+        <!-- Valid at 2016-08-10T16:00:00 -->
+        <windDirection deg="218.2" code="SW" name="Southwest" />
+        <windSpeed mps="2.7" name="Light breeze" />
+        <temperature unit="celsius" value="10" />
+        <pressure unit="hPa" value="1009.3" />
+      </time>
+      <time from="2016-08-10T17:00:00" to="2016-08-10T18:00:00">
+        <!-- Valid from 2016-08-10T17:00:00 to 2016-08-10T18:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03d" />
+        <precipitation value="0" minvalue="0" maxvalue="0.1" />
+        <!-- Valid at 2016-08-10T17:00:00 -->
+        <windDirection deg="255.6" code="WSW" name="West-southwest" />
+        <windSpeed mps="3.3" name="Light breeze" />
+        <temperature unit="celsius" value="10" />
+        <pressure unit="hPa" value="1009.2" />
+      </time>
+      <time from="2016-08-10T18:00:00" to="2016-08-10T19:00:00">
+        <!-- Valid from 2016-08-10T18:00:00 to 2016-08-10T19:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03d" />
+        <precipitation value="0" minvalue="0" maxvalue="0.6" />
+        <!-- Valid at 2016-08-10T18:00:00 -->
+        <windDirection deg="238.7" code="WSW" name="West-southwest" />
+        <windSpeed mps="3.3" name="Light breeze" />
+        <temperature unit="celsius" value="10" />
+        <pressure unit="hPa" value="1009.2" />
+      </time>
+      <time from="2016-08-10T19:00:00" to="2016-08-10T20:00:00">
+        <!-- Valid from 2016-08-10T19:00:00 to 2016-08-10T20:00:00 -->
+        <symbol number="5" numberEx="40" name="Light rain showers" var="40d" />
+        <precipitation value="0.2" minvalue="0" maxvalue="0.7" />
+        <!-- Valid at 2016-08-10T19:00:00 -->
+        <windDirection deg="275.7" code="W" name="West" />
+        <windSpeed mps="3.7" name="Gentle breeze" />
+        <temperature unit="celsius" value="9" />
+        <pressure unit="hPa" value="1009.6" />
+      </time>
+      <time from="2016-08-10T20:00:00" to="2016-08-10T21:00:00">
+        <!-- Valid from 2016-08-10T20:00:00 to 2016-08-10T21:00:00 -->
+        <symbol number="5" numberEx="40" name="Light rain showers" var="40d" />
+        <precipitation value="0.2" minvalue="0" maxvalue="0.7" />
+        <!-- Valid at 2016-08-10T20:00:00 -->
+        <windDirection deg="217.8" code="SW" name="Southwest" />
+        <windSpeed mps="3.7" name="Gentle breeze" />
+        <temperature unit="celsius" value="9" />
+        <pressure unit="hPa" value="1009.5" />
+      </time>
+      <time from="2016-08-10T21:00:00" to="2016-08-10T22:00:00">
+        <!-- Valid from 2016-08-10T21:00:00 to 2016-08-10T22:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03d" />
+        <precipitation value="0" minvalue="0" maxvalue="0.2" />
+        <!-- Valid at 2016-08-10T21:00:00 -->
+        <windDirection deg="227.3" code="SW" name="Southwest" />
+        <windSpeed mps="2.7" name="Light breeze" />
+        <temperature unit="celsius" value="8" />
+        <pressure unit="hPa" value="1009.7" />
+      </time>
+      <time from="2016-08-10T22:00:00" to="2016-08-10T23:00:00">
+        <!-- Valid from 2016-08-10T22:00:00 to 2016-08-10T23:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="mf/03n.23" />
+        <precipitation value="0" minvalue="0" maxvalue="0.1" />
+        <!-- Valid at 2016-08-10T22:00:00 -->
+        <windDirection deg="207.4" code="SSW" name="South-southwest" />
+        <windSpeed mps="1.9" name="Light breeze" />
+        <temperature unit="celsius" value="8" />
+        <pressure unit="hPa" value="1010.0" />
+      </time>
+      <time from="2016-08-10T23:00:00" to="2016-08-11T00:00:00">
+        <!-- Valid from 2016-08-10T23:00:00 to 2016-08-11T00:00:00 -->
+        <symbol number="2" numberEx="2" name="Fair" var="mf/02n.23" />
+        <precipitation value="0" />
+        <!-- Valid at 2016-08-10T23:00:00 -->
+        <windDirection deg="202.3" code="SSW" name="South-southwest" />
+        <windSpeed mps="2.5" name="Light breeze" />
+        <temperature unit="celsius" value="7" />
+        <pressure unit="hPa" value="1010.1" />
+      </time>
+      <time from="2016-08-11T00:00:00" to="2016-08-11T01:00:00">
+        <!-- Valid from 2016-08-11T00:00:00 to 2016-08-11T01:00:00 -->
+        <symbol number="2" numberEx="2" name="Fair" var="mf/02n.26" />
+        <precipitation value="0" />
+        <!-- Valid at 2016-08-11T00:00:00 -->
+        <windDirection deg="188.1" code="S" name="South" />
+        <windSpeed mps="2.7" name="Light breeze" />
+        <temperature unit="celsius" value="6" />
+        <pressure unit="hPa" value="1010.4" />
+      </time>
+      <time from="2016-08-11T01:00:00" to="2016-08-11T02:00:00">
+        <!-- Valid from 2016-08-11T01:00:00 to 2016-08-11T02:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="mf/03n.26" />
+        <precipitation value="0" />
+        <!-- Valid at 2016-08-11T01:00:00 -->
+        <windDirection deg="190.4" code="S" name="South" />
+        <windSpeed mps="3.0" name="Light breeze" />
+        <temperature unit="celsius" value="6" />
+        <pressure unit="hPa" value="1010.7" />
+      </time>
+      <time from="2016-08-11T02:00:00" to="2016-08-11T03:00:00">
+        <!-- Valid from 2016-08-11T02:00:00 to 2016-08-11T03:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="mf/03n.26" />
+        <precipitation value="0" />
+        <!-- Valid at 2016-08-11T02:00:00 -->
+        <windDirection deg="190.2" code="S" name="South" />
+        <windSpeed mps="3.2" name="Light breeze" />
+        <temperature unit="celsius" value="6" />
+        <pressure unit="hPa" value="1010.5" />
+      </time>
+      <time from="2016-08-11T03:00:00" to="2016-08-11T04:00:00">
+        <!-- Valid from 2016-08-11T03:00:00 to 2016-08-11T04:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" minvalue="0" maxvalue="0.6" />
+        <!-- Valid at 2016-08-11T03:00:00 -->
+        <windDirection deg="185.6" code="S" name="South" />
+        <windSpeed mps="3.1" name="Light breeze" />
+        <temperature unit="celsius" value="6" />
+        <pressure unit="hPa" value="1010.5" />
+      </time>
+      <time from="2016-08-11T04:00:00" to="2016-08-11T05:00:00">
+        <!-- Valid from 2016-08-11T04:00:00 to 2016-08-11T05:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" minvalue="0" maxvalue="0.7" />
+        <!-- Valid at 2016-08-11T04:00:00 -->
+        <windDirection deg="196.8" code="SSW" name="South-southwest" />
+        <windSpeed mps="3.5" name="Gentle breeze" />
+        <temperature unit="celsius" value="6" />
+        <pressure unit="hPa" value="1010.6" />
+      </time>
+      <time from="2016-08-11T05:00:00" to="2016-08-11T06:00:00">
+        <!-- Valid from 2016-08-11T05:00:00 to 2016-08-11T06:00:00 -->
+        <symbol number="2" numberEx="2" name="Fair" var="mf/02n.26" />
+        <precipitation value="0" />
+        <!-- Valid at 2016-08-11T05:00:00 -->
+        <windDirection deg="207.5" code="SSW" name="South-southwest" />
+        <windSpeed mps="3.5" name="Gentle breeze" />
+        <temperature unit="celsius" value="6" />
+        <pressure unit="hPa" value="1010.6" />
+      </time>
+      <time from="2016-08-11T06:00:00" to="2016-08-11T07:00:00">
+        <!-- Valid from 2016-08-11T06:00:00 to 2016-08-11T07:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03d" />
+        <precipitation value="0" minvalue="0" maxvalue="0.2" />
+        <!-- Valid at 2016-08-11T06:00:00 -->
+        <windDirection deg="199.4" code="SSW" name="South-southwest" />
+        <windSpeed mps="3.3" name="Light breeze" />
+        <temperature unit="celsius" value="6" />
+        <pressure unit="hPa" value="1010.5" />
+      </time>
+      <time from="2016-08-11T07:00:00" to="2016-08-11T08:00:00">
+        <!-- Valid from 2016-08-11T07:00:00 to 2016-08-11T08:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03d" />
+        <precipitation value="0" minvalue="0" maxvalue="0.3" />
+        <!-- Valid at 2016-08-11T07:00:00 -->
+        <windDirection deg="200.7" code="SSW" name="South-southwest" />
+        <windSpeed mps="3.8" name="Gentle breeze" />
+        <temperature unit="celsius" value="6" />
+        <pressure unit="hPa" value="1010.7" />
+      </time>
+      <time from="2016-08-11T08:00:00" to="2016-08-11T09:00:00">
+        <!-- Valid from 2016-08-11T08:00:00 to 2016-08-11T09:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03d" />
+        <precipitation value="0" minvalue="0" maxvalue="0.1" />
+        <!-- Valid at 2016-08-11T08:00:00 -->
+        <windDirection deg="203.1" code="SSW" name="South-southwest" />
+        <windSpeed mps="3.6" name="Gentle breeze" />
+        <temperature unit="celsius" value="7" />
+        <pressure unit="hPa" value="1010.8" />
+      </time>
+      <time from="2016-08-11T09:00:00" to="2016-08-11T10:00:00">
+        <!-- Valid from 2016-08-11T09:00:00 to 2016-08-11T10:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03d" />
+        <precipitation value="0" />
+        <!-- Valid at 2016-08-11T09:00:00 -->
+        <windDirection deg="206.8" code="SSW" name="South-southwest" />
+        <windSpeed mps="3.4" name="Gentle breeze" />
+        <temperature unit="celsius" value="8" />
+        <pressure unit="hPa" value="1010.9" />
+      </time>
+      <time from="2016-08-11T10:00:00" to="2016-08-11T11:00:00">
+        <!-- Valid from 2016-08-11T10:00:00 to 2016-08-11T11:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" minvalue="0" maxvalue="0.1" />
+        <!-- Valid at 2016-08-11T10:00:00 -->
+        <windDirection deg="219.3" code="SW" name="Southwest" />
+        <windSpeed mps="3.5" name="Gentle breeze" />
+        <temperature unit="celsius" value="10" />
+        <pressure unit="hPa" value="1010.6" />
+      </time>
+      <time from="2016-08-11T11:00:00" to="2016-08-11T12:00:00">
+        <!-- Valid from 2016-08-11T11:00:00 to 2016-08-11T12:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" minvalue="0" maxvalue="0.2" />
+        <!-- Valid at 2016-08-11T11:00:00 -->
+        <windDirection deg="238.9" code="WSW" name="West-southwest" />
+        <windSpeed mps="4.2" name="Gentle breeze" />
+        <temperature unit="celsius" value="11" />
+        <pressure unit="hPa" value="1010.5" />
+      </time>
+    </tabular>
+  </forecast>
+  <observations>
+    <weatherstation stno="68860" sttype="eklima" name="Trondheim (Voll)" distance="2425" lat="63.41070" lon="10.45380" source="Meteorologisk Institutt">
+      <symbol number="4" name="Cloudy" time="2016-08-09T06:00:00Z" />
+      <temperature unit="celsius" value="13.2" time="2016-08-09T09:00:00Z" />
+      <windDirection deg="216.0" code="SW" name="Southwest" time="2016-08-09T09:00:00Z" />
+      <windSpeed mps="2.3" name="Light breeze" time="2016-08-09T09:00:00Z" />
+    </weatherstation>
+    <weatherstation stno="67140" sttype="eklima" name="Skjetlein" distance="9642" lat="63.34030" lon="10.29730" source="Meteorologisk Institutt">
+      <temperature unit="celsius" value="12.8" time="2016-08-09T07:00:00Z" />
+    </weatherstation>
+    <weatherstation stno="69655" sttype="eklima" name="Frosta" distance="22291" lat="63.56570" lon="10.69400" source="Meteorologisk Institutt">
+      <temperature unit="celsius" value="13.4" time="2016-08-09T08:00:00Z" />
+    </weatherstation>
+  </observations>
+</weatherdata>
