@@ -47,9 +47,8 @@ class Forecast extends Logging {
         // NB: there is a two-hour gap in the forecast data that will be missed for now
         // (it's during nighttime, so no conflict with football games)
         for (time <- (forecast.get \\ "weatherdata" \ "forecast" \ "tabular" \ "time")) {
-            var from = DateTime.parse((time \ "@from") text)
-            var to = DateTime.parse((time \ "@to") text)
-            if (from.getMillis <= date.getMillis && date.getMillis <= to.getMillis)
+            if (DateTime.parse((time \ "@from") text).getMillis <= date.getMillis &&
+                date.getMillis <= DateTime.parse((time \ "@to") text).getMillis)
                 return Some(time)
         }
         return None
@@ -63,11 +62,9 @@ class Forecast extends Logging {
     }
 
     def getSnapshot(date: DateTime): Option[ForecastSnapshot] = {
-
         implicit class PipedObject[A](value: A) {
            def |>[B](f: A => B): B = f(value)
         }
-
         return getTabularTime(date) match {
             case Some(time) => {
                 var from = DateTime.parse((time \ "@from") text)
@@ -95,7 +92,7 @@ class Forecast extends Logging {
                 var pressure = (time \ "pressure") |> (tag =>
                     Pressure(((tag \ "@value") text).toFloat,
                              (tag \ "@unit") text))
-                Some(new ForecastSnapshot(from, to, symbol, precipitation, windDirection, windSpeed, temperature, pressure))
+                Some(ForecastSnapshot(from, to, symbol, precipitation, windDirection, windSpeed, temperature, pressure))
             }
             case _ => None
         }

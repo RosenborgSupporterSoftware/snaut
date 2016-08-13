@@ -1,16 +1,16 @@
 package no.rbkss.snaut
 
+import com.typesafe.config.ConfigFactory
 import scala.collection.mutable.HashMap
 
 object LocationMgr {
-    val yrbase = "http://www.yr.no/place/"
-    var locations = new HashMap[String, String]()
-    locations += ("Lerkendal" -> "Norway/S%C3%B8r-Tr%C3%B8ndelag/Trondheim/Lerkendal~211228")
+    var config = ConfigFactory.load()
+    val baseurl = config.getString("forecasts.baseurl")
 
-    def urlForLocation(location: String): Option[String] = { // to limit use to rbkweb-usage for now
-        locations.get(location) match {
-            case Some(yrloc) => Some(yrbase + yrloc + "/")
-            case None => None
-        }
+    def urlForLocation(location: String): Option[String] = {
+        val path = "locations." + location.toLowerCase
+        if (config.hasPath(path))
+            return Some(baseurl + config.getString(path))
+        return None
     }
 }
