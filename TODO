@@ -1,0 +1,14 @@
+- cache structure while monitoring, permanent endresults when expired
+- caching forecast downloads, do not stress yr.no
+- asynchronous/timer-based monitoring, per-url used, until time passed
+- expires-calculation
+- future date out-of-range handling
+- past date handling
+- handle yr-service down
+- forecast over two hours
+- url/request handling
+
+- svg image generation
+- svg icon library
+- caching images, request-based
+- serving images from cache with expires-headers
