@@ -19,4 +19,7 @@ Installer "sbt" (simple build tool)
  > $ sbt
 
 - sett opp sbt til å monitorere filendringer og bygge/kjøre testsuiten etter hver endring
- > > ~ test
+ > sbt> ~ test
+
+- exit sbt
+ > sbt> exit
