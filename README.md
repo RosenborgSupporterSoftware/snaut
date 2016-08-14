@@ -6,13 +6,17 @@ Automatisk generering av Yr.no vær-melding for RBKs kamptidspunkt.
 
 Installer "sbt" (simple build tool)
 
+- last ned alle dependencies
  > $ sbt update
-- laster ned alle dependencies
+
+- bygg src/main/
  > $ sbt compile
-- bygger src/main/
+
+- kjør testene under src/test/
  > $ sbt test
-- kjører testene under src/test/
+
+- start sbt i interaktiv mode
  > $ sbt
-- starter sbt i interaktiv mode
+
+- sett opp sbt til å monitorere filendringer og bygge/kjøre testsuiten etter hver endring
  > > ~ test
-- sette ropp sbt til å monitorere filendringer og bygge/kjøre testsuiten etter hver endring
