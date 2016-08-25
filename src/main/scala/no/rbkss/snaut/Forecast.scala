@@ -28,17 +28,17 @@ case class ForecastSnapshot(from: DateTime,
 class Forecast extends Logging {
     var forecast: Option[Elem] = None
 
-    def withURL(url: URL): Forecast = {
+    def loadURL(url: URL): Forecast = {
         forecast = Some(XML.load(url))
         return this
     }
 
-    def withFile(file: String): Forecast = {
+    def loadFile(file: String): Forecast = {
         forecast = Some(XML.loadFile(file))
         return this
     }
 
-    def withString(string: String): Forecast = {
+    def loadString(string: String): Forecast = {
         forecast = Some(XML.loadString(string))
         return this
     }
