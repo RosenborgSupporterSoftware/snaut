@@ -14,3 +14,5 @@ libraryDependencies ++= Seq("org.slf4j" % "slf4j-api" % "1.7.21",
                             "org.scalatest" %% "scalatest" % "3.0.0" % "test")
 
 // "org.scala-lang.modules" %% "scala-parser-combinators" % "1.0.4"
+
+testOptions in Test += Tests.Argument(TestFrameworks.ScalaTest, "-eNDXEHLO")
