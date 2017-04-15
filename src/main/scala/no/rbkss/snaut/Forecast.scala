@@ -61,6 +61,16 @@ class Forecast extends Logging {
         }
     }
 
+    def getTextForecast(date: DateTime): String = {
+        val Some(forecast) = getSnapshot(date)
+        var clouds = Forecast.getWeatherName(forecast.symbol.name)
+        var direction = Forecast.getWindDirectionName(forecast.windDirection.code)
+        val windtype = Forecast.getWindSpeedName(forecast.windSpeed.value)
+        var wind = s"${windtype}, ${forecast.windSpeed.value} m/s fra ${direction}.".capitalize
+        var rain = s"${forecast.percipitation.value} mm nedbør."
+        s"${clouds} ${wind} ${rain}"
+    }
+
     def getSnapshot(date: DateTime): Option[ForecastSnapshot] = {
         implicit class PipedObject[A](value: A) {
            def |>[B](f: A => B): B = f(value)
@@ -95,6 +105,72 @@ class Forecast extends Logging {
                 Some(ForecastSnapshot(from, to, symbol, precipitation, windDirection, windSpeed, temperature, pressure))
             }
             case _ => None
+        }
+    }
+}
+
+object Forecast {
+    // http://om.yr.no/forklaring/symbol/
+
+    //def getCloudSymbol(name: String): String = {
+    //    name match {
+    //        case "clear sky" => "01d"
+    //    }
+    //}
+
+    def getWindDirectionName(code: String): String = {
+        code match {
+            case "N" => "nord"
+            case "NNW" => "nord-nordvest"
+            case "NW" => "nordvest"
+            case "WNW" => "vest-nordvest"
+            case "W" => "vest"
+            case "WSW" => "vest-sørvest"
+            case "SW" => "sørvest"
+            case "SSW" => "sør-sørvest"
+            case "S" => "sør"
+            case "SSE" => "sør-sørøst"
+            case "SE" => "sørøst"
+            case "ESE" => "øst-sørøst"
+            case "E" => "øst"
+            case "ENE" => "øst-nordøst"
+            case "NE" => "nordøst"
+            case "NNE" => "nord-nordøst"
+            case _ => "ukjent"
+        }
+    }
+
+    def getWindSpeedName(speed: Float): String = {
+        if (speed <= 0.2) "stille"
+        else if (speed <= 1.5) "flau vind"
+        else if (speed <= 3.3) "svak vind"
+        else if (speed <= 5.4) "lett bris"
+        else if (speed <= 7.9) "laber bris"
+        else if (speed <= 10.7) "frisk bris"
+        else if (speed <= 13.8) "liten kuling"
+        else if (speed <= 17.1) "stiv kuling"
+        else if (speed <= 20.7) "sterk kuling"
+        else if (speed <= 24.4) "liten storm"
+        else if (speed <= 28.4) "full storm"
+        else "ukjent"
+    }
+
+    def getWeatherName(symbol: String): String = {
+        symbol match {
+            case "Clear sky" => "Sol/klarvær"
+            case "Fair" => "Lettskyet"
+            case "Partly cloudy" => "Delvis skyet"
+            case "Cloudy" => "Skyet"
+            case "Light rain showers" => "Lette regnbyger"
+            case "Rain showers" => "Regnbyger"
+            case "Heavy rain showers" => "Kraftige regnbyger"
+            case "Light rain showers and thunder" => "Lette regnbyger og torden"
+            case "Rain showers AND thunder" => "Regnbyger og torden"
+            case "Heavy rain showers and thunder" => "Kraftige regnbyger og torden"
+            case "Light sleet showers" => "Lette sluddbyger"
+            case "Sleet showers" => "Sluddbyger"
+            case "Heavy sleet showers" => "Kraftige sluddbyger"
+            case _ => "ukjent"
         }
     }
 }
