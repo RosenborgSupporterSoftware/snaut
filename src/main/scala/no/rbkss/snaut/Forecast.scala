@@ -8,6 +8,7 @@ import java.util.Date
 import java.net.URL
 import grizzled.slf4j.Logging
 import org.joda.time.DateTime
+import scala.language.postfixOps
 
 case class Symbol(symbol: Integer, symbolExtended: Integer, variant: String, name: String)
 case class Precipitation(value: Float, minimum: Float, maximum: Float)
