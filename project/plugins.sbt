@@ -1,0 +1,6 @@
+//lazy val sbtJst = uri("git://github.com/matthewrennie/sbt-jst")
+//lazy val sbtJst = uri("/Users/larsa/Code/sbt-jst")
+//lazy val sbtJst = uri("git://github.com/larsjaas/sbt-jst")
+//lazy val root = (project in file(".")).dependsOn(sbtJst)
+addSbtPlugin("org.scalastyle" %% "scalastyle-sbt-plugin" % "0.8.0")
+addSbtPlugin("com.timushev.sbt" % "sbt-updates" % "0.3.0")

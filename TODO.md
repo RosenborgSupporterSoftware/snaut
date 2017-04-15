@@ -1,8 +1,8 @@
 - cache structure while monitoring, permanent endresults when expired
 - caching forecast downloads, do not stress yr.no
 - asynchronous/timer-based monitoring, per-url used, until time passed
-- expires-calculation
-- future date out-of-range handling
+- expires-calculation for current forecast state
+- future date out-of-range handling (use eklima average data?)
 - past date handling
 - handle yr-service down
 - forecast over two hours
