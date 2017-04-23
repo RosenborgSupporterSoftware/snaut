@@ -32,7 +32,7 @@ class ImageSpec extends FlatSpec with Matchers {
         img.addCloudSymbol("03d")
         img.addLocationHeader("Lerkendal", "24.5.2017 18:00-20:00")
         img.addTemperature(-2)
-        img.addWind(2, 1)
+        img.addWind(4, 120)
         img.addYrLogo()
         img.addText("Klarvær. Flau vind, 1 m/s fra sørøst. 0 mm nedbør.")
         img.addUpdateTime("11:30")

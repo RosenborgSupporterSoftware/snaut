@@ -1,6 +1,8 @@
 package no.rbkss.snaut
 
 import java.io.File
+import java.text.SimpleDateFormat
+import java.time.LocalDateTime
 
 import scala.xml._
 import scala.xml.transform._
@@ -66,9 +68,9 @@ class Image {
         }
     }
 
-    def addTemperature(temp: Int): Unit = {
+    def addTemperature(temp: Float): Unit = {
         val fill = if (temp >= 0) "red" else "blue"
-        val tempstr = temp.toString + "˚"
+        val tempstr = f"${temp}%.1g˚"
         addFragment(<text x="100" y="100" fill={fill} text-anchor="end" font-size="30" font-family="Arial, Helvetica, sans-serif">{tempstr}</text>)
     }
 
@@ -123,6 +125,12 @@ class Image {
     def addUpdateTime(time: String): Unit = {
         val text = "Oppdatert " + time
         addFragment(<text x="100" y="149" text-anchor="end" font-size="6" font-family="Arial, Helvetica, sans" fill="lightgrey">{text}</text>)
+    }
+
+    def addUpdateTime(): Unit = {
+        val now = LocalDateTime.now()
+        val formatter = new SimpleDateFormat("HH:mm")
+        addUpdateTime(formatter.format(now))
     }
 
     //def setFromForecast(forecast: Forecast): Unit = {
