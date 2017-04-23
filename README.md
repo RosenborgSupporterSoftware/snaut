@@ -12,4 +12,6 @@ Dette burde få opp servicen, som kan aksesseres med http på port 8888.
 
 Eksempler på bilder som kan genereres (dummy-eksempler):
 
-![Været på Lerkendal](http://larsjaas.no-ip.org/lerkendal.html)
+![Været på Lerkendal](http://larsjaas.no-ip.org/sample1.svg)
+![Været på Lerkendal](http://larsjaas.no-ip.org/sample2.svg)
+![Været på Lerkendal](http://larsjaas.no-ip.org/sample3.svg)
