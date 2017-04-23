@@ -4,22 +4,12 @@ Automatisk generering av Yr.no vær-melding for RBKs kamptidspunkt.
 
 # bygging
 
-Installer "sbt" (simple build tool)
+Installer "sbt" (simple build tool), og kjør
 
-- last ned alle dependencies
- > $ sbt update
+ > $ sbt clean compile run
 
-- bygg src/main/
- > $ sbt compile
+Dette burde få opp servicen, som kan aksesseres med http på port 8888.
 
-- kjør testene under src/test/
- > $ sbt test
+Eksempler på bilder som kan genereres (dummy-eksempler):
 
-- start sbt i interaktiv mode
- > $ sbt
-
-- sett opp sbt til å monitorere filendringer og bygge/kjøre testsuiten etter hver endring
- > sbt> ~ test
-
-- exit sbt
- > sbt> exit
+![Været på Lerkendal](http://larsjaas.no-ip.org/lerkendal.html)
